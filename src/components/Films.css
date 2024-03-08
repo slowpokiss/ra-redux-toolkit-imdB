@@ -1,0 +1,41 @@
+
+.films {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.film {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+.film-image {
+  width: calc((100% / 3));
+  height: auto;
+}
+
+.actions {
+  width: fit-content;
+}
+
+.actions-favorite {
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  color: rgb(126, 126, 126);
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.actions-favorite-active {
+  color: red;
+}
