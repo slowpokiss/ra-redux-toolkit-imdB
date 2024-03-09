@@ -1,6 +1,7 @@
 import './App.css'
 import Favorite from './components/Favorite'
 import Main from './components/Main'
+import SingleCard from './components/SingleCard'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
 
@@ -9,6 +10,7 @@ const routerProv = createBrowserRouter(
     <>
       <Route path='/' element={<Main />}></Route>
       <Route path='/favorite' element={<Favorite />}></Route>
+      <Route path='/card/:id' element={<SingleCard />}></Route>
     </>
   )
 )
